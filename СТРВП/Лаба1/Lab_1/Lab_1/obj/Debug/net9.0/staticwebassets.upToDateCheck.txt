@@ -1,0 +1,2 @@
+wwwroot\index.html
+C:\Лабы\СТРВП\Lab_1\Lab_1\wwwroot\index.html

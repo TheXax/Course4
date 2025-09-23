@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>REST Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-start p-8">
+
+<h1 class="text-2xl font-bold mb-6 text-indigo-700">REST сервис: работа с RESULT и стеком</h1>
+
+<!-- Блок выбора инициалов -->
+<div class="bg-white shadow rounded-xl p-4 mb-6 w-full max-w-md">
+    <label class="block text-gray-600 mb-2">Ваши инициалы:</label>
+    <div class="flex gap-2">
+        <input id="initials" value="XXX"
+               class="flex-grow border border-gray-300 rounded-lg px-3 py-2 focus:ring focus:ring-indigo-200 outline-none"/>
+        <button onclick="setInitials()"
+                class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg">Применить</button>
+    </div>
+    <p class="mt-2 text-sm text-gray-500">Текущий ресурс: <span id="route" class="font-mono"></span></p> <!--показывает текущий маршрут-->
+</div>
+
+<!-- Управление -->
+<div class="grid grid-cols-2 gap-4 w-full max-w-md mb-6">
+    <button onclick="doGet()"
+            class="bg-blue-500 hover:bg-blue-600 text-white rounded-lg py-2 shadow">GET RESULT</button>
+
+    <button onclick="doPost()"
+            class="bg-green-500 hover:bg-green-600 text-white rounded-lg py-2 shadow">POST RESULT</button>
+
+    <button onclick="doPut()"
+            class="bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg py-2 shadow">PUT PUSH</button>
+
+    <button onclick="doDelete()"
+            class="bg-red-500 hover:bg-red-600 text-white rounded-lg py-2 shadow">DELETE POP</button>
+</div>
+
+<!-- Форма для параметров -->
+<div class="bg-white shadow rounded-xl p-4 w-full max-w-md mb-6">
+    <label class="block text-gray-600">RESULT (для POST):</label>
+    <input id="resultVal" type="number" value="5"
+           class="w-full border border-gray-300 rounded-lg px-3 py-2 mb-3 focus:ring focus:ring-indigo-200 outline-none"/>
+
+    <label class="block text-gray-600">ADD (для PUT):</label>
+    <input id="addVal" type="number" value="7"
+           class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring focus:ring-indigo-200 outline-none"/>
+</div>
+
+<!-- Вывод -->
+<div class="bg-white shadow rounded-xl p-4 w-full max-w-md">
+    <h2 class="font-semibold mb-2 text-gray-700">Ответ сервера:</h2>
+    <pre id="out" class="bg-gray-50 border rounded-lg p-3 h-64 overflow-auto text-sm"></pre>
+</div>
+
+<script>
+    let base = "/resource.XXX";
+
+    function setInitials(){
+        const i = document.getElementById("initials").value.trim();
+        base = "/resource." + (i || "XXX");
+        document.getElementById("route").textContent = base;
+        out("Установлен маршрут: " + base + "\n");
+    }
+    setInitials();
+
+    function out(x){
+        const o = document.getElementById("out");
+        o.textContent = x + "\n" + o.textContent; //обавляет новую строку в начало лога
+    }
+
+    async function call(method, url, body=null){
+        const opts = { method, credentials: 'same-origin' };
+        if (body && method !== 'GET') {
+            opts.body = new URLSearchParams(body);
+            opts.headers = {'Content-Type': 'application/x-www-form-urlencoded'};
+        }
+        try {
+            const r = await fetch(url, opts);
+            const txt = await r.text();
+            out(method + " " + url + " -> " + r.status + "\n" + txt + "\n");
+        } catch (err) {
+            out("Ошибка: " + err);
+        }
+    }
+
+    function doGet(){ call('GET', base); }
+    function doPost(){
+        const val = document.getElementById("resultVal").value;
+        call('POST', base + "?RESULT=" + val);
+    }
+    function doPut(){
+        const val = document.getElementById("addVal").value;
+        call('PUT', base + "?ADD=" + val);
+    }
+    function doDelete(){ call('DELETE', base); }
+</script>
+
+</body>
+</html>

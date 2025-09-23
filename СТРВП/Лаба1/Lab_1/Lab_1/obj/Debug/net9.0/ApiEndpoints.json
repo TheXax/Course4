@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "Lab1.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__1_4",
+    "RelativePath": "resource.SVA",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Lab1.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__1_5",
+    "RelativePath": "resource.SVA",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Lab1.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__1_6",
+    "RelativePath": "resource.SVA",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Lab1.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__1_7",
+    "RelativePath": "resource.SVA",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
