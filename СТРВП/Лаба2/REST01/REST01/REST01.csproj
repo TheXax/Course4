@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Под .NET 8 нужен соответствующий JwtBearer -->
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Ссылки на проекты библиотек -->
+    <ProjectReference Include="..\ResultsCollection1\ResultsCollection.csproj" />
+    <ProjectReference Include="..\ResultsAuthenticate1\ResultsAuthenticate.csproj" />
+  </ItemGroup>
+</Project>
