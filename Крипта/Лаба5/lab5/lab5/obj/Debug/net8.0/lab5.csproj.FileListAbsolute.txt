@@ -1,0 +1,14 @@
+C:\Лабы\Крипта\Лаба5\lab5\lab5\bin\Debug\net8.0\lab5.exe
+C:\Лабы\Крипта\Лаба5\lab5\lab5\bin\Debug\net8.0\lab5.deps.json
+C:\Лабы\Крипта\Лаба5\lab5\lab5\bin\Debug\net8.0\lab5.runtimeconfig.json
+C:\Лабы\Крипта\Лаба5\lab5\lab5\bin\Debug\net8.0\lab5.dll
+C:\Лабы\Крипта\Лаба5\lab5\lab5\bin\Debug\net8.0\lab5.pdb
+C:\Лабы\Крипта\Лаба5\lab5\lab5\obj\Debug\net8.0\lab5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Лабы\Крипта\Лаба5\lab5\lab5\obj\Debug\net8.0\lab5.AssemblyInfoInputs.cache
+C:\Лабы\Крипта\Лаба5\lab5\lab5\obj\Debug\net8.0\lab5.AssemblyInfo.cs
+C:\Лабы\Крипта\Лаба5\lab5\lab5\obj\Debug\net8.0\lab5.csproj.CoreCompileInputs.cache
+C:\Лабы\Крипта\Лаба5\lab5\lab5\obj\Debug\net8.0\lab5.dll
+C:\Лабы\Крипта\Лаба5\lab5\lab5\obj\Debug\net8.0\refint\lab5.dll
+C:\Лабы\Крипта\Лаба5\lab5\lab5\obj\Debug\net8.0\lab5.pdb
+C:\Лабы\Крипта\Лаба5\lab5\lab5\obj\Debug\net8.0\lab5.genruntimeconfig.cache
+C:\Лабы\Крипта\Лаба5\lab5\lab5\obj\Debug\net8.0\ref\lab5.dll
