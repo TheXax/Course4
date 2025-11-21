@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "JsonRpcServer.Controllers.JsonRpcController",
+    "Method": "Post",
+    "RelativePath": "api/JsonRpc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
