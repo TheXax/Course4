@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>SignalR Calculator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input { margin: 5px; width: 100px; }
+    button { margin: 5px; }
+    #result { margin-top: 15px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>SignalR Calculator</h2>
+
+  <div>
+    <input id="x" type="number" placeholder="x">
+    <input id="y" type="number" placeholder="y">
+    <input id="factX" type="number" placeholder="x для FACT">
+  </div>
+
+  <div> <!--удалённый вызов метода хаба-->
+    <button onclick="call('SUM')">SUM</button>
+    <button onclick="call('SUB')">SUB</button>
+    <button onclick="call('MUL')">MUL</button>
+    <button onclick="call('DIV')">DIV</button>
+    <button onclick="callFact()">FACT</button>
+  </div>
+
+  <p id="result">Ожидание подключения...</p>
+
+  <script>
+    let connection; //соединение с хабом
+
+    async function startConnection() {
+      connection = new signalR.HubConnectionBuilder()
+        .withUrl("http://localhost:5000/calculatorHub")
+        .configureLogging(signalR.LogLevel.Information)
+        .build();
+
+      try {
+        await connection.start();
+        console.log("Connected to SignalR");
+      } catch (err) {
+        document.getElementById("result").innerText = "Ошибка подключения: " + err.message;
+        console.error("Connection failed: ", err);
+      }
+    }
+
+    async function call(method) {
+      if (!connection || connection.state !== "Connected") {
+        document.getElementById("result").innerText = "Ошибка: нет соединения с сервером.";
+        return;
+      }
+
+      const x = parseFloat(document.getElementById("x").value);
+      const y = parseFloat(document.getElementById("y").value);
+
+      try {
+        const result = await connection.invoke(method, x, y);
+        document.getElementById("result").innerText = `${method}(${x}, ${y}) = ${result}`;
+      } catch (err) {
+        document.getElementById("result").innerText = `Ошибка: ${err.message}`;
+      }
+    }
+
+    async function callFact() {
+      if (!connection || connection.state !== "Connected") {
+        document.getElementById("result").innerText = "Ошибка: нет соединения с сервером.";
+        return;
+      }
+
+      const x = parseInt(document.getElementById("factX").value);
+
+      try {
+        const result = await connection.invoke("FACT", x);
+        document.getElementById("result").innerText = `FACT(${x}) = ${result}`;
+      } catch (err) {
+        document.getElementById("result").innerText = `Ошибка: ${err.message}`;
+      }
+    }
+
+    startConnection();
+  </script>
+</body>
+</html>
