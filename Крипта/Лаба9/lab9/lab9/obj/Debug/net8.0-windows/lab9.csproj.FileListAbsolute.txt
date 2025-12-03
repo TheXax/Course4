@@ -1,0 +1,16 @@
+C:\Лабы\Крипта\Лаба9\lab9\lab9\bin\Debug\net8.0-windows\lab9.exe
+C:\Лабы\Крипта\Лаба9\lab9\lab9\bin\Debug\net8.0-windows\lab9.deps.json
+C:\Лабы\Крипта\Лаба9\lab9\lab9\bin\Debug\net8.0-windows\lab9.runtimeconfig.json
+C:\Лабы\Крипта\Лаба9\lab9\lab9\bin\Debug\net8.0-windows\lab9.dll
+C:\Лабы\Крипта\Лаба9\lab9\lab9\bin\Debug\net8.0-windows\lab9.pdb
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\lab9.Form1.resources
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\lab9.csproj.GenerateResource.cache
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\lab9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\lab9.AssemblyInfoInputs.cache
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\lab9.AssemblyInfo.cs
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\lab9.csproj.CoreCompileInputs.cache
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\lab9.dll
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\refint\lab9.dll
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\lab9.pdb
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\lab9.genruntimeconfig.cache
+C:\Лабы\Крипта\Лаба9\lab9\lab9\obj\Debug\net8.0-windows\ref\lab9.dll
