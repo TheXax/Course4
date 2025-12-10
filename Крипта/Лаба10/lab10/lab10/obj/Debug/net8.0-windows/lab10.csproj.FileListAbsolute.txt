@@ -1,0 +1,14 @@
+C:\Лабы\Крипта\Лаба10\lab10\lab10\obj\Debug\net8.0-windows\lab10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Лабы\Крипта\Лаба10\lab10\lab10\obj\Debug\net8.0-windows\lab10.AssemblyInfoInputs.cache
+C:\Лабы\Крипта\Лаба10\lab10\lab10\obj\Debug\net8.0-windows\lab10.AssemblyInfo.cs
+C:\Лабы\Крипта\Лаба10\lab10\lab10\obj\Debug\net8.0-windows\lab10.csproj.CoreCompileInputs.cache
+C:\Лабы\Крипта\Лаба10\lab10\lab10\bin\Debug\net8.0-windows\lab10.exe
+C:\Лабы\Крипта\Лаба10\lab10\lab10\bin\Debug\net8.0-windows\lab10.deps.json
+C:\Лабы\Крипта\Лаба10\lab10\lab10\bin\Debug\net8.0-windows\lab10.runtimeconfig.json
+C:\Лабы\Крипта\Лаба10\lab10\lab10\bin\Debug\net8.0-windows\lab10.dll
+C:\Лабы\Крипта\Лаба10\lab10\lab10\bin\Debug\net8.0-windows\lab10.pdb
+C:\Лабы\Крипта\Лаба10\lab10\lab10\obj\Debug\net8.0-windows\lab10.dll
+C:\Лабы\Крипта\Лаба10\lab10\lab10\obj\Debug\net8.0-windows\refint\lab10.dll
+C:\Лабы\Крипта\Лаба10\lab10\lab10\obj\Debug\net8.0-windows\lab10.pdb
+C:\Лабы\Крипта\Лаба10\lab10\lab10\obj\Debug\net8.0-windows\lab10.genruntimeconfig.cache
+C:\Лабы\Крипта\Лаба10\lab10\lab10\obj\Debug\net8.0-windows\ref\lab10.dll
