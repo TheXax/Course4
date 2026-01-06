@@ -1,0 +1,29 @@
+//контракт между клиентом и сервером
+syntax = "proto3";
+
+option csharp_namespace = "Lab6";
+
+service Calculator {
+  rpc Sum (BinaryRequest) returns (DoubleReply); 
+  rpc Sub (BinaryRequest) returns (DoubleReply);
+  rpc Mul (BinaryRequest) returns (DoubleReply);
+  rpc Div (BinaryRequest) returns (DoubleReply);
+  rpc Fact (UnaryRequest) returns (IntReply);
+}
+
+message BinaryRequest {
+  double x = 1;
+  double y = 2;
+}
+
+message UnaryRequest {
+  int32 x = 1;
+}
+
+message DoubleReply {
+  double result = 1;
+}
+
+message IntReply {
+  int32 result = 1;
+}
