@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "cheerio": "^1.2.0",
-    "epub": "^1.2.0"
-  }
-}
